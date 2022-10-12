@@ -1,0 +1,92 @@
+@font-face {
+    font-family: balbeer;
+    src: url(fonts/balbeer.ttf);
+}
+
+body {
+    background-color: beige;
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    font-family: balbeer;
+}
+
+#logoMenu{
+    width: 15%;
+    height: 15%;
+}
+
+#reservation{
+    margin: 10px;
+    padding: 10px;
+    background-color: red;
+    border: 2px solid darkred;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 50px;
+    margin: 0 auto;
+    background-color: black;
+    align-items: stretch;
+    font-family: balbeer;
+}
+
+nav > div {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav > div > a {
+    padding: 0 10px;
+    border-left: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+nav > div > a:hover {
+    color: darkred;
+}
+
+nav > div:first-child a{
+    border-left: none;
+}
+
+.sous-menu{
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 50px;
+}
+
+.sous-menu > div{
+    padding: 10px;
+}
+
+.sous-menu > div > a{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.sous-menu > a:hover {
+    color: darkred;
+}
+
+nav > div:hover .sous-menu{
+    display: block;
+}
