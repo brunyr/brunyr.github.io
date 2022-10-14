@@ -1,20 +1,49 @@
 @font-face {
-    font-family: balbeer;
-    src: url(fonts/balbeer.ttf);
+    font-family: retroJump;
+    src: url(fonts/RetroJump.ttf);
+}
+
+.bandeFine{
+    height: 1px;
+    width: 100%;
+    background-color: beige;
+}
+
+.bandeLarge{
+    height: 3px;
+    width: 100%;
+    background-color: beige;
+}
+
+#bandeFineHaut{
+    top : 5px;
+}
+
+#bandeLargeHaut{
+    top : 10px;
+}
+
+#bandeLargeBas{
+    top : 60px;
+}
+
+#bandeFineBas{
+    top : 75px;
 }
 
 body {
-    background-color: red;
-    color: white;
+    background-color: black;
+    color: beige;
 }
 
 header{
-    display: flex;
-    flex-direction: row;
+    position: sticky;
+
     background-color: black;
-    justify-content: space-between;
-    align-items: center;
-    font-family: balbeer;
+
+    font-family: retroJump;
+    color: beige;
+
 }
 
 #logoMenu{
@@ -25,8 +54,10 @@ header{
 #reservation{
     margin: 10px;
     padding: 10px;
-    background-color: red;
-    border: 2px solid darkred;
+
+    background-color: black;
+    border: 2px solid beige;
+    border-style: double;
 }
 
 nav{
@@ -35,9 +66,9 @@ nav{
     width: auto;
     height: 50px;
     margin: 0 auto;
-    background-color: black;
+    background-color: red;
     align-items: stretch;
-    font-family: balbeer;
+    font-family: retroJump;
 }
 
 nav > div {
@@ -50,14 +81,16 @@ nav > div {
 
 nav > div > a {
     padding: 0 10px;
-    border-left: 2px solid white;
-    color: white;
-    text-decoration: none;
+
+    border-left: 2px solid beige;
+
     font-size: xx-large;
+    color: beige;
+    text-decoration: none;
 }
 
 nav > div > a:hover {
-    color: darkred;
+    color: white;
 }
 
 nav > div:first-child a{
@@ -78,13 +111,13 @@ nav > div:first-child a{
 .sous-menu > div > a{
     text-align: center;
     padding: 10px;
-    color: white;
+    color: beige;
     text-decoration: none;
     font-size: x-large;
 }
 
 .sous-menu > a:hover {
-    color: darkred;
+    color: white;
 }
 
 nav > div:hover .sous-menu{
