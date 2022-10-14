@@ -6,29 +6,31 @@
 .bandeFine{
     height: 1px;
     width: 100%;
-    background-color: beige;
+    background-color: #e1d2b8;
+    position: relative;
 }
 
 .bandeLarge{
     height: 3px;
     width: 100%;
-    background-color: beige;
-}
-
-#bandeFineHaut{
-    top : 5px;
+    background-color: #e1d2b8;
+    position: relative;
 }
 
 #bandeLargeHaut{
     top : 10px;
 }
 
+#bandeFineHaut{
+    top : 10px;
+}
+
 #bandeLargeBas{
-    top : 60px;
+    top : 50px;
 }
 
 #bandeFineBas{
-    top : 75px;
+    top : 50px;
 }
 
 body {
@@ -42,7 +44,8 @@ header{
     background-color: black;
 
     font-family: retroJump;
-    color: beige;
+    color: #c8ad7f;
+
 
 }
 
@@ -52,23 +55,45 @@ header{
 }
 
 #reservation{
-    margin: 10px;
-    padding: 10px;
+    margin-left: 200px;
+
+    width: 80px;
+    height: 30px;
 
     background-color: black;
-    border: 2px solid beige;
+
     border-style: double;
+    border-color: #e1d2b8;
+
+    justify-content: center;
+}
+
+#reservation:hover{
+    background-color: white;
+    border-color: black;
+}
+
+#reservation:hover > a{
+    color: black;
+    font-weight: normal;
 }
 
 nav{
     display: flex;
     flex-direction: row;
+
+    position: relative;
+    bottom: 50px;
+
     width: auto;
     height: 50px;
     margin: 0 auto;
-    background-color: red;
-    align-items: stretch;
-    font-family: retroJump;
+    background-color: black;
+
+    justify-content: center;
+
+    align-items: center;
+
 }
 
 nav > div {
@@ -77,35 +102,31 @@ nav > div {
     position: relative;
     display: flex;
     align-items: center;
+    padding: 0 40px;
 }
 
 nav > div > a {
     padding: 0 10px;
 
-    border-left: 2px solid beige;
-
-    font-size: xx-large;
-    color: beige;
+    font-size: xxx-large;
+    color: #e1d2b8;
     text-decoration: none;
 }
 
 nav > div > a:hover {
     color: white;
-}
-
-nav > div:first-child a{
-    border-left: none;
+    font-weight: bold;
 }
 
 .sous-menu{
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: rgba(0,0,0, .5);
     top: 50px;
 }
 
 .sous-menu > div{
-    padding: 10px;
+
 }
 
 .sous-menu > div > a{
@@ -113,11 +134,12 @@ nav > div:first-child a{
     padding: 10px;
     color: beige;
     text-decoration: none;
-    font-size: x-large;
+    font-size: xxx-large;
 }
 
-.sous-menu > a:hover {
+.sous-menu > div > a:hover {
     color: white;
+    font-weight: bold;
 }
 
 nav > div:hover .sous-menu{
