@@ -3,6 +3,22 @@
     src: url(fonts/RetroJump.ttf);
 }
 
+body {
+    background-color: black;
+    color: beige;
+}
+
+header{
+    position: fixed;
+
+    width: 100%;
+
+    background-color: black;
+
+    font-family: retroJump;
+    color: #c8ad7f;
+}
+
 .bandeFine{
     height: 1px;
     width: 100%;
@@ -33,30 +49,74 @@
     top : 50px;
 }
 
-body {
+nav{
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    bottom: 23px;
+
+    width: auto;
+    height: 50px;
+    margin: 0 auto;
     background-color: black;
-    color: beige;
-}
 
-header{
-    position: sticky;
+    justify-content: space-between;
 
-    background-color: black;
-
-    font-family: retroJump;
-    color: #c8ad7f;
-
-
+    align-items: center;
 }
 
 #logoMenu{
-    width: 15%;
-    height: 15%;
+    width: auto;
+    height: 100%;
+}
+
+nav > div {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+#menu > div {
+    padding: 0 40px;
+}
+
+nav a {
+    padding: 0 10px;
+
+    font-size: xxx-large;
+    color: #e1d2b8;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.sous-menu{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0, .5);
+    top: 50px;
+}
+
+.sous-menu > div > a{
+    text-align: center;
+    padding: 10px;
+    color: beige;
+    text-decoration: none;
+    font-size: xxx-large;
+}
+
+nav > div > div:hover .sous-menu{
+    display: block;
 }
 
 #reservation{
-    margin-left: 200px;
-
     width: 80px;
     height: 30px;
 
@@ -66,6 +126,9 @@ header{
     border-color: #e1d2b8;
 
     justify-content: center;
+
+    justify-self: flex-end;
+
 }
 
 #reservation:hover{
@@ -78,70 +141,6 @@ header{
     font-weight: normal;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-
-    position: relative;
-    bottom: 50px;
-
-    width: auto;
-    height: 50px;
-    margin: 0 auto;
-    background-color: black;
-
-    justify-content: center;
-
-    align-items: center;
-
-}
-
-nav > div {
-    width: auto;
-    height: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
-}
-
-nav > div > a {
-    padding: 0 10px;
-
-    font-size: xxx-large;
-    color: #e1d2b8;
-    text-decoration: none;
-}
-
-nav > div > a:hover {
-    color: white;
-    font-weight: bold;
-}
-
-.sous-menu{
-    display: none;
-    position: absolute;
-    background-color: rgba(0,0,0, .5);
-    top: 50px;
-}
-
-.sous-menu > div{
-
-}
-
-.sous-menu > div > a{
-    text-align: center;
-    padding: 10px;
-    color: beige;
-    text-decoration: none;
-    font-size: xxx-large;
-}
-
-.sous-menu > div > a:hover {
-    color: white;
-    font-weight: bold;
-}
-
-nav > div:hover .sous-menu{
-    display: block;
+nav > div:last-child {
+    justify-self: flex-end;
 }
