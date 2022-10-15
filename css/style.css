@@ -3,70 +3,81 @@
     src: url(fonts/RetroJump.ttf);
 }
 
+@font-face {
+    font-family: mermaid;
+    src: url(fonts/Mermaid.ttf);
+}
+
 body {
     background-color: black;
-    color: beige;
+    color: black;
+    font-family: mermaid;
 }
 
-header{
+header {
     position: fixed;
 
+    top: 0px;
+    right: 0px;
+
     width: 100%;
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, .7);
 
     font-family: retroJump;
-    color: #c8ad7f;
+    color: #e1d2b8;
 }
 
-.bandeFine{
+.bandeFine {
     height: 1px;
     width: 100%;
-    background-color: #e1d2b8;
+    background-color: #c8ad7f;
+    border-color: #c8ad7f;
     position: relative;
 }
 
-.bandeLarge{
+.bandeLarge {
     height: 3px;
     width: 100%;
-    background-color: #e1d2b8;
+    background-color: #c8ad7f;
+    border-color: #c8ad7f;
     position: relative;
 }
 
-#bandeLargeHaut{
-    top : 10px;
+#bandeLargeHaut {
+    top: 0px;
 }
 
-#bandeFineHaut{
-    top : 10px;
+#bandeFineHaut {
+    top: 0px;
 }
 
-#bandeLargeBas{
-    top : 50px;
+#bandeLargeBas {
+    top: 60px;
 }
 
-#bandeFineBas{
-    top : 50px;
+#bandeFineBas {
+    top: 60px;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
 
     position: relative;
-    bottom: 23px;
+    bottom: 32px;
 
     width: auto;
-    height: 50px;
+    height: 68px;
     margin: 0 auto;
-    background-color: black;
+    background-color: transparent;
 
     justify-content: space-between;
 
     align-items: center;
 }
 
-#logoMenu{
+#logoMenu {
     width: auto;
     height: 100%;
 }
@@ -87,7 +98,7 @@ nav > div {
 nav a {
     padding: 0 10px;
 
-    font-size: xxx-large;
+    font-size: 60px;
     color: #e1d2b8;
     text-decoration: none;
 }
@@ -97,50 +108,238 @@ header a:hover {
     font-weight: bold;
 }
 
-.sous-menu{
+.sous-menu {
     display: none;
     position: absolute;
-    background-color: rgba(0,0,0, .5);
-    top: 50px;
+    background-color: transparent;
+    top: 65px;
 }
 
-.sous-menu > div > a{
+.sous-menu > div:first-child {
+    padding-top: 20px;
+}
+
+.sous-menu > div {
+    margin-left: 10px;
+}
+
+.sous-menu > div > a {
     text-align: center;
-    padding: 10px;
-    color: beige;
-    text-decoration: none;
+    color: white;
     font-size: xxx-large;
 }
 
-nav > div > div:hover .sous-menu{
+.sous-menu > div > a:hover {
+    color: white;
+}
+
+nav > div > div:hover .sous-menu {
     display: block;
 }
 
-#reservation{
-    width: 80px;
-    height: 30px;
+.boutonReserver {
+    position: relative;
+    right: 35px;
 
     background-color: black;
 
-    border-style: double;
-    border-color: #e1d2b8;
+    border: 2px solid beige;
+    border-radius: 20px;
 
     justify-content: center;
 
-    justify-self: flex-end;
+    transition-duration: 0.4s;
 
+    box-shadow: rgba(255, 255, 255, 0.65) 0px 5px 15px;
 }
 
-#reservation:hover{
-    background-color: white;
-    border-color: black;
+.boutonReserver a {
+    font-size: 25px;
+
+    font-family: mermaid;
+
+    color: beige;
+
+    transition-duration: 0.4s;
 }
 
-#reservation:hover > a{
+.boutonReserver:hover a {
     color: black;
     font-weight: normal;
 }
 
-nav > div:last-child {
-    justify-self: flex-end;
+.boutonReserver:hover {
+    background-color: white;
+    border-color: black;
+
+    cursor: pointer;
+}
+
+#imageGarage {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.articlesMain {
+    width: 50%;
+    height: 500px;
+    text-align: center;
+}
+
+#articleInfos {
+    background-color: #231f19;
+    color: lightgrey;
+
+    position: static;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    border: 2px solid black;
+}
+
+
+#articlePrincipe {
+    background-color: #817053;
+    color: black;
+
+    position: static;
+
+    border: 2px solid black;
+}
+
+h1 {
+    font-size: 50px;
+
+    text-align: left;
+}
+
+p {
+    font-size: 20px;
+}
+
+#titreInfos h1 {
+    margin: 0 0 0 180px;
+}
+
+#titreInfos h1:first-child {
+    margin-top: 50px;
+}
+
+#traitInfos {
+    width: 5%;
+    height: 0.5px;
+    background-color: lightgrey;
+
+    position: relative;
+    right: 190px;
+}
+
+#lesInfos {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+.uneInfo {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.imagesInfos {
+    width: 40px;
+    height: auto;
+}
+
+#mainPrincipe {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    text-align: start;
+
+    justify-items: start;
+}
+
+#mainPrincipe p {
+    margin: 0px;
+}
+
+#articleRecommandation {
+    background-color: #c8ad7f;
+
+    height: 400px;
+    width: 100%;
+
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid black;
+
+    align-items: center;
+}
+
+#articleReservation{
+    background-color: #e1d2b8;
+    height: 400px;
+    width: 100%;
+
+    top: 50px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid black;
+
+    align-items: center;
+}
+
+#boutonReserverDuBas{
+    background-color: black;
+    border-color: beige;
+    color: beige;
+    font-size: 50px;
+    font-family: mermaid;
+
+    box-shadow: rgba(1, 1, 1, 0.65) 0px 5px 15px;
+
+    padding: 10px;
+}
+
+#boutonReserverDuBas:hover{
+    background-color: beige;
+    border-color: black;
+    color : black;
+    font-size: 50px;
+}
+
+footer {
+    background-color: white;
+
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid black;
 }
