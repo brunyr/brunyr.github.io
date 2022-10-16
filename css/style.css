@@ -4,14 +4,19 @@
 }
 
 @font-face {
-    font-family: mermaid;
-    src: url(fonts/Mermaid.ttf);
+    font-family: shine;
+    src: url(fonts/Shine.ttf);
+}
+
+@font-face {
+    font-family: louisGeorge;
+    src: url(fonts/LouisGeorgeCafe.ttf);
 }
 
 body {
     background-color: black;
     color: black;
-    font-family: mermaid;
+    font-family: louisGeorge;
 }
 
 header {
@@ -131,6 +136,7 @@ header a:hover {
 
 .sous-menu > div > a:hover {
     color: white;
+    font-weight: bold;
 }
 
 nav > div > div:hover .sous-menu {
@@ -156,7 +162,7 @@ nav > div > div:hover .sous-menu {
 .boutonReserver a {
     font-size: 25px;
 
-    font-family: mermaid;
+    font-family: shine;
 
     color: beige;
 
@@ -216,13 +222,18 @@ main {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 45px;
+
+
+    font-weight: bold;
 
     text-align: left;
+
+    font-family: louisGeorge;
 }
 
 p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #titreInfos h1 {
@@ -297,8 +308,8 @@ p {
 }
 
 #articleReservation{
-    background-color: #e1d2b8;
-    height: 400px;
+    background-image: url("images/garageFooter.jpg") ;
+    height: 450px;
     width: 100%;
 
     top: 50px;
@@ -313,33 +324,127 @@ p {
     align-items: center;
 }
 
+#articleReservation h1{
+    color: white;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    padding: 15px;
+}
+
+#articleReservation p{
+    color: white;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+
+    margin: 0;
+
+    padding: 15px;
+}
+
+
 #boutonReserverDuBas{
-    background-color: black;
-    border-color: beige;
-    color: beige;
-    font-size: 50px;
-    font-family: mermaid;
+    background-color: rgba(0,0,0,.8);
+    border-color: white;
+    color: white;
+    font-size: 60px;
+    font-family: shine;
 
     box-shadow: rgba(1, 1, 1, 0.65) 0px 5px 15px;
 
     padding: 10px;
+
+    margin-top: 80px;
+
+    left: 1px;
 }
 
 #boutonReserverDuBas:hover{
-    background-color: beige;
-    border-color: black;
+    background-color: white;
+    border-color: white;
     color : black;
     font-size: 50px;
 }
 
 footer {
-    background-color: white;
+    background-color: #232323;
 
-    height: 200px;
+    height: 250px;
     width: 100%;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    justify-content: space-between;
 
     border: 2px solid black;
+}
+
+#logoFooter{
+    height: 150px;
+    width: auto;
+
+    align-self: center;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: row;
+
+    gap: 100px;
+}
+
+footer > div > div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#insta{
+    height: 25px;
+    width: auto;
+}
+
+footer h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+}
+
+footer a{
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a:hover{
+    font-weight: bold;
+}
+
+#mapFooter{
+    height: 200px;
+    width: auto;
+
+    align-self: center;
 }
