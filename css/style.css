@@ -291,7 +291,7 @@ p {
     margin: 0px;
 }
 
-#articleRecommandation {
+#articleLieu {
     background-color: #c8ad7f;
 
     height: 400px;
@@ -300,15 +300,40 @@ p {
     top: 0;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     border: 2px solid black;
+
+    justify-content: space-between;
+}
+
+#articleLieu div{
+    display: flex;
+    flex-direction: column;
 
     align-items: center;
 }
 
-#articleReservation{
-    background-image: url("images/garageFooter.jpg") ;
+#articleLieu h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#articleLieu p {
+    margin: 0 20px;
+}
+
+#articleLieu img {
+    height: 200px;
+    width: auto;
+
+    margin-bottom: 10px;
+
+    border: 2px solid black;
+}
+
+#articleReservation {
+    background-image: url("images/garageFooter.jpg");
     height: 450px;
     width: 100%;
 
@@ -324,9 +349,9 @@ p {
     align-items: center;
 }
 
-#articleReservation h1{
+#articleReservation h1 {
     color: white;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
 
     margin-top: 40px;
@@ -335,9 +360,9 @@ p {
     padding: 15px;
 }
 
-#articleReservation p{
+#articleReservation p {
     color: white;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
 
     margin: 0;
@@ -346,8 +371,8 @@ p {
 }
 
 
-#boutonReserverDuBas{
-    background-color: rgba(0,0,0,.8);
+#boutonReserverDuBas {
+    background-color: rgba(0, 0, 0, .8);
     border-color: white;
     color: white;
     font-size: 60px;
@@ -362,10 +387,10 @@ p {
     left: 1px;
 }
 
-#boutonReserverDuBas:hover{
+#boutonReserverDuBas:hover {
     background-color: white;
     border-color: white;
-    color : black;
+    color: black;
     font-size: 50px;
 }
 
@@ -383,38 +408,38 @@ footer {
     border: 2px solid black;
 }
 
-#logoFooter{
+#logoFooter {
     height: 150px;
     width: auto;
 
     align-self: center;
 }
 
-footer > div{
+footer > div {
     display: flex;
     flex-direction: row;
 
     gap: 100px;
 }
 
-footer > div > div{
+footer > div > div {
     display: flex;
     flex-direction: column;
 }
 
-footer > div > div > div{
+footer > div > div > div {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 10px;
 }
 
-#insta{
+#insta {
     height: 25px;
     width: auto;
 }
 
-footer h1{
+footer h1 {
     color: white;
     font-size: 40px;
     text-align: center;
@@ -423,14 +448,14 @@ footer h1{
     margin-top: 10px;
 }
 
-footer p{
+footer p {
     color: white;
     font-size: 20px;
     text-align: left;
     margin: 10px;
 }
 
-footer a{
+footer a {
     color: white;
     font-size: 20px;
     text-align: left;
@@ -438,11 +463,11 @@ footer a{
     margin: 10px;
 }
 
-footer a:hover{
+footer a:hover {
     font-weight: bold;
 }
 
-#mapFooter{
+#mapFooter {
     height: 200px;
     width: auto;
 
