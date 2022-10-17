@@ -17,6 +17,9 @@ body {
     background-color: black;
     color: black;
     font-family: louisGeorge;
+
+    margin: auto;
+    width: 1400px;
 }
 
 header {
