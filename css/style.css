@@ -230,7 +230,7 @@ main {
     border: 2px solid black;
 }
 
-h1 {
+h2 {
     font-size: 45px;
 
 
@@ -245,11 +245,11 @@ p {
     font-size: 22px;
 }
 
-#titreInfos h1 {
+#titreInfos h2 {
     margin: 0 0 0 180px;
 }
 
-#titreInfos h1:first-child {
+#titreInfos h2:first-child {
     margin-top: 50px;
 }
 
@@ -326,7 +326,7 @@ p {
     height: auto;
 }
 
-#articleLieu h1 {
+#articleLieu h2 {
     text-align: center;
     margin: 20px 0;
 }
@@ -369,7 +369,7 @@ p {
     align-items: center;
 }
 
-#articleReservation h1 {
+#articleReservation h2 {
     color: white;
     background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
@@ -459,7 +459,7 @@ footer > div > div > div {
     width: auto;
 }
 
-footer h1 {
+footer h2 {
     color: white;
     font-size: 40px;
     text-align: center;
