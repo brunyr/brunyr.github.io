@@ -13,6 +13,10 @@
     src: url(fonts/LouisGeorgeCafe.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: black;
@@ -119,7 +123,7 @@ header a:hover {
 .sous-menu {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .7);
     top: 65px;
 }
 
@@ -312,11 +316,14 @@ p {
     justify-content: space-between;
 }
 
-#articleLieu div{
+#articleLieu > div{
     display: flex;
     flex-direction: column;
 
     align-items: center;
+
+    width: 50%;
+    height: auto;
 }
 
 #articleLieu h1 {
@@ -328,6 +335,7 @@ p {
     margin: 0 20px;
 }
 
+
 #articleLieu img {
     height: 200px;
     width: auto;
@@ -337,6 +345,11 @@ p {
     box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
 
     border-radius: 20px;
+}
+
+#articleLieu > div > div{
+    display: flex;
+    flex-direction: row;
 }
 
 #articleReservation {
@@ -479,4 +492,21 @@ footer a:hover {
     width: auto;
 
     align-self: center;
+}
+
+#fleche{
+    position: fixed;
+    bottom: 10px;
+    left: 70px;
+
+    height: 50px;
+    width: auto;
+}
+
+#fleche:hover{
+    height: 60px;
+    width: auto;
+
+    bottom: 5px;
+    left: 65px;
 }
