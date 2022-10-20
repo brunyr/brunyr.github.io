@@ -101,10 +101,18 @@ nav > div {
     display: flex;
     align-items: center;
     padding: 0 40px;
+
+
 }
 
 #menu > div {
     padding: 0 40px;
+
+    width: 150px;
+
+    align-self: center;
+
+    text-align: center;
 }
 
 nav a {
@@ -133,6 +141,8 @@ header a:hover {
 
 .sous-menu > div {
     margin-left: 10px;
+
+    text-align: left;
 }
 
 .sous-menu > div > a {
@@ -316,7 +326,7 @@ p {
     justify-content: space-between;
 }
 
-#articleLieu > div{
+#articleLieu > div {
     display: flex;
     flex-direction: column;
 
@@ -342,12 +352,12 @@ p {
 
     margin-bottom: 10px;
 
-    box-shadow: 0 0 8px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
 
     border-radius: 20px;
 }
 
-#articleLieu > div > div{
+#articleLieu > div > div {
     display: flex;
     flex-direction: row;
 }
@@ -494,7 +504,7 @@ footer a:hover {
     align-self: center;
 }
 
-#fleche{
+#fleche {
     position: fixed;
     bottom: 10px;
     left: 70px;
@@ -503,7 +513,7 @@ footer a:hover {
     width: auto;
 }
 
-#fleche:hover{
+#fleche:hover {
     height: 60px;
     width: auto;
 
